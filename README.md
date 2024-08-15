@@ -1,6 +1,6 @@
 # README
 
-API documented using Swangger. This is a simple API running in its own Docker container. The app is built on Pyhton, utilizing:
+API documented using Swagger. This is a simple API running in its own Docker container. The app is built on Pyhton, utilizing:
 
 - **Flask** as framework,
 - **request** utility to handle endpoints and
