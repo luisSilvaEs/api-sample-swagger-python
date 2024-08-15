@@ -6,4 +6,4 @@ class MongoDBConnection:
         self.db = self.client[db_name]
 
     def get_notes_db(self, collection_name):
-        return self.db[collection_name]
+        return self.db[collection_name]#returns a collection (array)
