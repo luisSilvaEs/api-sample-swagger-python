@@ -16,3 +16,11 @@ def home():
 def get_notes_route():
         notes = mongo_controller.get_notes()
         return jsonify(notes) # Return the notes as a JSON response
+
+@main.route('/addNotes', methods=['POST'])
+def add_notes_route():
+        return mongo_controller.add_notes()
+
+@main.route('/deleteNotes', methods=['DELETE'])
+def delete_notes_route():
+        return mongo_controller.delete_notes()
