@@ -36,7 +36,7 @@ The main idea behind this project is only to get familiar with the use of Python
 1. Create _Dockerfile_ and _.dockerignore_ files
 2. Dockerfile will have the image to run python, the instruction to move our app in a directory inside the image, expose a port and the command to run the app.
 3. dockerignore should contain the venv folder, compiled Python files, cache directories, and environment files when building the Docker image.
-4. Build manually the image: `docker build -t api-python-container .`
+4. Build manually the image: `docker build -t api-python-image .`
 5. After a few seconds we should get in the screen something as follow in case the building had beeen successfull
 
 ```
@@ -53,8 +53,8 @@ What's Next?
 6. Validate the image had been created: `docker images`
 
 ```
-REPOSITORY                                           TAG       IMAGE ID       CREATED              SIZE
-api-python-container                                 latest    e15f106a9d34   About a minute ago   175MB
+REPOSITORY                              TAG       IMAGE ID       CREATED              SIZE
+api-python-image                       latest    e15f106a9d34   About a minute ago   175MB
 ```
 
 ### Run container from created image
