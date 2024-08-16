@@ -28,3 +28,37 @@ The main idea behind this project is only to get familiar with the use of Python
 3. Create a swagger.yaml file that describes your API.
 4. Integrate Swagger UI into your Flask app using flask_swagger_ui.
 5. Access the Swagger UI at /swagger on your local server.
+
+## Dockerize app
+
+### Create image and initial settings
+
+1. Create _Dockerfile_ and _.dockerignore_ files
+2. Dockerfile will have the image to run python, the instruction to move our app in a directory inside the image, expose a port and the command to run the app.
+3. dockerignore should contain the venv folder, compiled Python files, cache directories, and environment files when building the Docker image.
+4. Build manually the image: `docker build -t api-python-container .`
+5. After a few seconds we should get in the screen something as follow in case the building had beeen successfull
+
+```
+sha256:e15f106a9d34d18363b3ab11c7da6a7d2a77caf4dded0940da9546599cb6dc7e                                          0.0s
+ => => naming to docker.io/library/api-python-container                                                                                            0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tfybdh9wrkhsm3pkc1dh6midu
+
+What's Next?
+  1. Sign in to your Docker account → docker login
+  2. View a summary of image vulnerabilities and recommendations → docker scout quickview
+```
+
+6. Validate the image had been created: `docker images`
+
+```
+REPOSITORY                                           TAG       IMAGE ID       CREATED              SIZE
+api-python-container                                 latest    e15f106a9d34   About a minute ago   175MB
+```
+
+### Run container from created image
+
+### Create a volume to store the data
+
+### Create a docker compose file and raise container
