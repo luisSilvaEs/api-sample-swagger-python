@@ -20,3 +20,11 @@ The main idea behind this project is only to get familiar with the use of Python
 6. Backup in Git:
    - `git init`
    - create a gitignore file and add inside the folder _venv/_
+
+## Install Swagger
+
+1. Install flask-swagger-ui: `pip install flask flask-swagger-ui`
+2. Update requirements.txt file: `pip freeze > requirements.txt`
+3. Create a swagger.yaml file that describes your API.
+4. Integrate Swagger UI into your Flask app using flask_swagger_ui.
+5. Access the Swagger UI at /swagger on your local server.
