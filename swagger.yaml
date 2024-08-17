@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  description: "This is a simple CRUD API for managing notes."
+  description: "This is a simple CRUD API for managing notes created in Python."
   version: "1.0.0"
   title: "ToDo App API"
 host: "http://127.0.0.1:5000/"
@@ -29,7 +29,7 @@ paths:
         - "application/json"
       parameters:
         - in: "body"
-          newNote: "Note object that needs to be added"
+          newNote: "Note description, for example: Go to the gym"
           required: true
           schema:
             $ref: "#/definitions/Note"

@@ -41,7 +41,7 @@ The main idea behind this project is only to get familiar with the use of Python
 
 ```
 sha256:e15f106a9d34d18363b3ab11c7da6a7d2a77caf4dded0940da9546599cb6dc7e                                          0.0s
- => => naming to docker.io/library/api-python-container                                                                                            0.0s
+ => => naming to docker.io/library/api-python-image                                                                                                0.0s
 
 View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tfybdh9wrkhsm3pkc1dh6midu
 
@@ -59,6 +59,18 @@ api-python-image                       latest    e15f106a9d34   About a minute a
 
 ### Run container from created image
 
+1. Run in your terminal following command: `docker run -ti api-python-image /bin/sh`
+2. You should be able to access to the app through the ULR [http://localhost:5005](http://localhost:5005) if working you should
+   see in the browser:
+
+```
+Hello world
+```
+
 ### Create a volume to store the data
 
 ### Create a docker compose file and raise container
+
+## References
+
+- [Python Programs 4: Dockerizing Your Flask API for Seamless Deployments](https://medium.com/@prateekbansalind/python-programs-4-dockerizing-your-flask-api-for-seamless-deployments-28c1842a92cb)
