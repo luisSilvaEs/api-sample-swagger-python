@@ -59,12 +59,24 @@ api-python-image                       latest    e15f106a9d34   About a minute a
 
 ### Run container from created image
 
-1. Run in your terminal following command: `docker run -ti api-python-image /bin/sh`
+1. Run in your terminal following command: `docker run -ti -p 5005:5000 api-python-image`
 2. You should be able to access to the app through the ULR [http://localhost:5005](http://localhost:5005) if working you should
    see in the browser:
 
 ```
 Hello world
+```
+
+also in the terminal you should see the following output
+
+```
+Serving Flask app 'main.py'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.2:5000
+Press CTRL+C to quit
 ```
 
 ### Create a volume to store the data
