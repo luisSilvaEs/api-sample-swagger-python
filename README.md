@@ -79,9 +79,9 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 ```
 
-### Create a volume to store the data
-
 ### Create a docker compose file and raise container
+
+### Create a volume to store the data
 
 ## References
 
