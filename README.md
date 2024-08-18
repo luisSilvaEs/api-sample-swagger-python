@@ -153,6 +153,7 @@ _Note_ In local the Base URL change **http://localhost:5005/** for **127.0.0.1:5
 
 - [django-rest-api](https://github.com/techwithtim/django-rest-api/tree/main)
 - [Linode-Flask-MongoDB-API](https://github.com/techwithtim/Linode-Flask-MongoDB-API/tree/main)
+- [Python API Tutorial: Getting Started with APIs](https://www.dataquest.io/blog/python-api-tutorial/)
 - [Python Programs 4: Dockerizing Your Flask API for Seamless Deployments](https://medium.com/@prateekbansalind/python-programs-4-dockerizing-your-flask-api-for-seamless-deployments-28c1842a92cb)
 - [Video Create A Python API in 12 Minutes](https://www.youtube.com/watch?v=zsYIw6RXjfM)
 - [Video Python REST API Tutorial - Building a Flask REST API](https://www.youtube.com/watch?v=GMppyAPbLYk)
